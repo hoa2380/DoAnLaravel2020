@@ -1,0 +1,111 @@
+p {
+    color: white;
+}
+th,
+td {
+    font-family: Arial, Helvetica, sans-serif;
+}
+th {
+    color: white;
+}
+td {
+    color:#585858 !important;
+}
+
+/*  */
+.col-sm-2 {
+    padding: 0;
+}
+.sidenav {
+    background-color: lightblue;
+    height: 100%;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    overflow-x: hidden;
+    overflow-y: hidden; /* Disable horizontal scroll */
+}
+
+.col-sm-10 {
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* modal */
+form.form-horizontal {
+    margin-bottom: 0px !important;
+}
+label.col.control-label {
+    margin-bottom: 6px;
+}
+.modal-footer {
+    padding-bottom: 0px !important;
+}
+.modal-header .close {
+    outline: none;
+}
+button.btn.btn-outline-danger {
+    margin-left: 10px;
+}
+
+/*  */
+.user-details {
+    /* display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247); */
+}
+.user-details p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+.user-details:hover {
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+/* side bar */
+.list-group {
+    margin-top: 155px;
+    background-color: lightblue !important;
+}
+.list-group-item {
+    background-color: transparent !important;
+    color: black !important;
+    border: transparent !important;
+    margin-bottom: 0px;
+    text-decoration: none !important;
+}
+.list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.205) !important;
+}
+.active {
+    background-color: rgba(255, 255, 255, 0.315) !important;
+}
+
+/* talbe */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: rgba(189, 189, 189, 0.219) !important;
+}
+.table td,
+.table th {
+    vertical-align: middle;
+}
+.row.action-button {
+    flex-wrap: nowrap;
+    margin-right: 0px !important;
+}
+.row .action-edit {
+    width: 80px; /*edit button*/
+}
+.row .action-delete {
+    width: max-content;
+}
+.action-form {
+    margin-block-end: 0px;
+}
