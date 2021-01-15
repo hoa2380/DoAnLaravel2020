@@ -1586,7 +1586,7 @@ ol {
 .newslatter-item h5 {
 	color: #ffffff;
 	font-weight: 700;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .newslatter-item p {
@@ -1639,7 +1639,7 @@ ol {
 	position: absolute;
 	right: 0;
 	top: 0;
-	padding: 13px 20px 12px;
+	padding: 13px 8px 12px;
 	cursor: pointer;
 }
 
@@ -1669,6 +1669,21 @@ ol {
 
 .copyright-reserved .payment-pic {
 	float: right;
+}
+
+.footer-download-text {
+	margin-top: 15px;
+}
+
+.footer-about-download-content-app {
+	display: flex;
+    align-items: center;
+}
+
+.footer-about-download-content-img {
+	width: 120px;
+	height: auto;
+    margin-right: 10px;
 }
 
 /*-------------------------------- Other Pages Style -------------------------------*/
