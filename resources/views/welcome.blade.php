@@ -81,7 +81,7 @@
                         <div class="advanced-search">
                             <button type="button" class="category-btn"></button>
                             <form action="#" class="input-group">
-                                <input type="text" placeholder="">
+                                <input type="text" placeholder="Tìm kiếm">
                                 <button type="button"><i class="ti-search"></i></button>
                             </form>
                         </div>
@@ -239,17 +239,17 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-2 offset-lg-1">
+                <div class="col-lg-3 offset-lg-1">
                     <div class="footer-widget">
-                        <h5>Thông tin</h5>
+                        <h5>Về chúng tôi</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Checkout</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Serivius</a></li>
+                            <li><a href="#">Giới thiệu về Fashi Store</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Cam kết hàng chính hãng</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
                 <div class="col-lg-2">
                     <div class="footer-widget">
                         <h5>Tài khoản của tôi</h5>
@@ -259,14 +259,24 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="newslatter-item">
-                        <h5>Nhận thông báo của shop </h5>
-                        <p>Nhận cập nhật E-mail về cửa hàng mới nhất của chúng tôi và ưu đãi đặc biệt.</p>
+                        <h5>Nhập điện thoại để được tư vấn nhanh từ Fashi Store.</h5>
                         <form action="#" class="subscribe-form">
-                            <input type="text" placeholder="Enter Your Mail">
-                            <button type="button">Đăng kí</button>
+                            <input type="text" placeholder="Số điện thoại">
+                            <button type="button">Tư vấn</button>
                         </form>
+                        <h5 class="footer-download-text">Tải ứng dụng trên điện thoại</h5>
+                        <div class="footer-about-download-content-app">
+                          <a href="#">
+                                 <img src="assets/img/app-store.png" alt="" class="footer-about-download-content-img">
+                            </a>
+                            <a href="#">
+                                 <img src="assets/img/google-play.png" alt="" class="footer-about-download-content-img">
+                            </a>
+                        </div>
+        
+                        
                     </div>
                 </div>
             </div>
