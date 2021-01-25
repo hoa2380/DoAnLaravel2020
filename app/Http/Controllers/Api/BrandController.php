@@ -21,7 +21,7 @@ class BrandController extends Controller
     {
         $brand = ProductBrand::find($id);
         return api_success(
-            array('data' => $brand->products)
+            array('data' => $brand)
         );
     }
 
