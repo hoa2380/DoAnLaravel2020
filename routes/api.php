@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +15,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();    
+Route::post('login', [UserController::class, 'login']);
+Route::post('register', [UserController::class, 'register']);
+
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::get('user', [UserController::class, 'getUser']);
 });
 
 Route::namespace('api')->group(function() {
     Route::get('brands', 'BrandController@index');
-    Route::get('products', 'ProductController@index');
-    Route::get('products/{id}', 'ProductController@show');
     Route::get('brands/{id}', 'BrandController@show');
     Route::get('brands/{id}/search', 'BrandController@search');
-    Route::get('products/search', 'ProductController@search');
+
+    Route::get('products', 'ProductController@index');
+    Route::get('products/{id}', 'ProductController@show');
+    Route::get('product/search', 'ProductController@search');
+    Route::get('getProductsByCategories/{id}', 'ProductController@getProductsByCategory');
+    Route::get('getProductsByBrands/{id}', 'ProductController@getProductsByBrand');
+
+    
+    Route::get('categories', 'CategoryController@index');
+    Route::get('categories/{id}', 'CategoryController@show');
+    Route::get('categories/{id}/search', 'CategoryController@search');
+
+    
 
 });
