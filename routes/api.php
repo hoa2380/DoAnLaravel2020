@@ -31,6 +31,7 @@ Route::namespace('api')->group(function() {
     Route::get('products/{id}', 'ProductController@show');
     Route::get('product/search', 'ProductController@search');
     Route::get('getProductsByCategories/{id}', 'ProductController@getProductsByCategory');
+    Route::get('getProductsByBrands/{id}', 'ProductController@getProductsByBrand');
 
     
     Route::get('categories', 'CategoryController@index');

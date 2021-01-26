@@ -49,4 +49,13 @@ class ProductController extends Controller
         );
 
     }
+    public function getProductsByBrand($id){
+    
+        $products = Product::where('product_brands_id', $id)->get();
+
+        return api_success(
+            array('data'=> $products)
+        );
+
+    }
 }
