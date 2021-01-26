@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Product;
 use Illuminate\Http\Request;
+use App\Category;
+
 
 class ProductController extends Controller
 {
@@ -36,5 +38,15 @@ class ProductController extends Controller
         return api_success(
             array('data' => $products)
         );
+    }
+
+    public function getProductsByCategory($id){
+    
+        $products = Product::where('categories_id', $id)->get();
+
+        return api_success(
+            array('data'=> $products)
+        );
+
     }
 }

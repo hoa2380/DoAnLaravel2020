@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Category;
 use App\Product;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ProductResource;
+
 
 class CategoryController extends Controller
 {
@@ -32,4 +34,6 @@ class CategoryController extends Controller
             array('data' => $products)
         );
     }
+
+    
 }
